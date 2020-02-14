@@ -18,4 +18,20 @@ public class Student {
     public String getName() {
         return this.name;
     }
+
+    public void addGrade(int inputGrade) {
+        this.grades.add(inputGrade);
+    }
+
+    public ArrayList<Integer> getGrades() {
+        return this.grades;
+    }
+
+    public double getGradeAverage() {
+        double sum = 0;
+        for(int grade : this.grades) {
+            sum += grade;
+        }
+        return sum / this.grades.size();
+    }
 }
