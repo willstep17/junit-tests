@@ -23,7 +23,11 @@ public class Student {
         this.grades.add(inputGrade);
     }
 
-    public double getAverage() {
+    public ArrayList<Integer> getGrades() {
+        return this.grades;
+    }
+
+    public double getGradeAverage() {
         double sum = 0;
         for(int grade : this.grades) {
             sum += grade;
